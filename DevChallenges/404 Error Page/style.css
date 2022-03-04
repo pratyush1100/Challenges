@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+}
+main {
+  height: 100vh;
+  width: 100%;
+  background-color: #fff;
+  overflow-y: hidden;
+}
+nav h1 {
+  font-family: "Inconsolata", monospace;
+  margin: auto 0 0 50px;
+  line-height: 50px;
+}
+section {
+  height: calc(100vh - 50px);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 119px 0 77px;
+}
+.left,
+.right {
+  flex: 1;
+}
+img {
+  max-width: 450px;
+}
+.right h1 {
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 80px;
+  letter-spacing: -0.035em;
+  color: #333333;
+}
+.right p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: -0.035em;
+  color: #4f4f4f;
+  margin: 26px 0 45px 0;
+  max-width: 400px;
+}
+.btn {
+  padding: 17px 30px;
+  font-weight: bold;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #fff;
+  background: #333333;
+  outline: none;
+  border: none;
+  border-radius: 0;
+}
+@media only screen and (max-width: 375px) {
+  main {
+    overflow-y: scroll;
+  }
+  section {
+    padding: 0 20px;
+    display: block;
+  }
+  nav h1 {
+    font-size: 24px;
+    line-height: 25px;
+    margin: 24px 0 0 20px;
+  }
+  .left {
+    display: flex;
+    margin-bottom: 77px;
+    justify-content: center;
+  }
+  img {
+    margin-top: 64px;
+    max-width: 286px;
+  }
+  .right h1 {
+    font-size: 48px;
+    line-height: 71px;
+    letter-spacing: -0.035em;
+  }
+  .right p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: -0.035em;
+    color: #4f4f4f;
+    margin: 26px 0 45px 0;
+    max-width: 400px;
+  }
+  .btn {
+    padding: 17px 30px;
+    font-weight: bold;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #fff;
+    background: #333333;
+    outline: none;
+    border: none;
+    border-radius: 0;
+  }
+}

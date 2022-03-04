@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  background: var(--Pale-blue) url(./images/pattern-background-desktop.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .card {
+    width: 380px;
+    height: 560px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 15px rgba(85, 85, 85, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    .top {
+      flex-basis: 32%;
+      background: var(--Pale-blue) url(./images/illustration-hero.svg);
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .bottom {
+      flex-basis: 68%;
+      padding: 40px 40px 10px 40px;
+      text-align: center;
+      .infos {
+        h1 {
+          font-weight: 900;
+          font-size: 22px;
+        }
+        p {
+          margin-top: 15px;
+          font-size: 14px;
+          font-weight: 600;
+          color: var(--Desaturated-blue);
+        }
+      }
+      .plans {
+        margin-top: 20px;
+        background-color: var(--Very-pale-blue);
+        height: 80px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        border-radius: 10px;
+        .left {
+          display: flex;
+          align-items: center;
+          flex: 2;
+          img {
+            width: 40px;
+            height: 40px;
+          }
+          .plan-details {
+            margin-left: 20px;
+            text-align: left;
+            h1 {
+              font-weight: 900;
+              font-size: 14px;
+            }
+            p {
+              margin-top: 5px;
+              font-size: 12px;
+              font-weight: 600;
+              color: var(--Desaturated-blue);
+            }
+          }
+        }
+        .right {
+          flex: 1;
+          display: flex;
+          justify-content: end;
+          .btn {
+            background: none;
+            border: none;
+            text-decoration: underline;
+            font-weight: 700;
+            color: var(--Bright-blue);
+            transition: 0.2s ease-in;
+            cursor: pointer;
+            &:hover {
+              color: hsl(244.51, 55.19%, 68.43%);
+            }
+          }
+        }
+      }
+      .payment {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 30px 0;
+        .proceed-btn {
+          width: 100%;
+          background: var(--Bright-blue);
+          padding: 15px 20px;
+          border: none;
+          border-radius: 10px;
+          color: #fff;
+          font-weight: 700;
+          box-shadow: 0px 4px 14px 0 rgba(144, 151, 182, 0.6);
+          transition: 0.2s ease-in;
+          cursor: pointer;
+          &:hover {
+            background-color: hsl(244.51, 55.19%, 68.43%);
+          }
+        }
+        .cancel-btn {
+          width: 100%;
+          background: none;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 10px;
+          color: var(--Desaturated-blue);
+          margin: 10px 0 0 0;
+          font-weight: 800;
+          transition: 0.2s ease-in;
+          cursor: pointer;
+          &:hover {
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .main {
+    background: var(--Pale-blue);
+
+    .card {
+      width: 320px;
+      height: 560px;
+      .bottom {
+        padding: 30px 30px 8px 30px;
+        .infos {
+          h1 {
+            font-size: 20px;
+          }
+          p {
+            margin-top: 14px;
+            font-size: 13px;
+          }
+        }
+        .plans {
+          margin-top: 19px;
+          height: 70px;
+          padding: 15px;
+          .left {
+            img {
+              width: 35px;
+              height: 35px;
+            }
+            .plan-details {
+              margin-left: 18px;
+              h1 {
+                font-weight: 900;
+                font-size: 14px;
+              }
+              p {
+                margin-top: 4px;
+              }
+            }
+          }
+          .right {
+            .btn {
+              font-size: 13px;
+            }
+          }
+        }
+        .payment {
+          margin: 25px 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --bg-Very-dark-blue: hsl(217, 54%, 11%);
+  --card-Very-dark-blue: hsl(216, 50%, 16%);
+  --white: hsl(0, 0%, 100%);
+  --Soft-blue: rgb(139, 172, 218);
+  --Cyan: hsl(178, 100%, 50%);
+  --line-Very-dark-blue: hsl(215, 32%, 27%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+.main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-Very-dark-blue);
+}
+.card {
+  width: 280px;
+  height: 480px;
+  background: #fff;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--card-Very-dark-blue);
+  padding: 20px;
+  box-shadow: 0 20px 0 10px #0912207c, 0 10px 0 30px #0b162791;
+}
+.top,
+.bottom {
+  flex: 1;
+}
+.top{
+  position: relative
+}
+.top img {
+  width: 240px;
+  border-radius: 7px;
+}
+.top img:hover ~ .overlay{
+  display: flex;
+  opacity: 1;
+}
+.overlay{
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: hsl(178, 100%, 50%, 0.5);
+  display: none;
+  opacity: 0;
+  transition: .3s;
+}
+.overlay img{
+  width: 50px;
+}
+.bottom {
+  padding: 20px 0;
+}
+.heading {
+  color: var(--white);
+  display: inline;
+  font-size: 18px;
+  font-weight: 600;
+  transition: .3s ease-in;
+  cursor: pointer;
+}
+.heading:hover , .creator p span:hover{
+  color: var(--Cyan);
+}
+.desc {
+  padding: 15px 0;
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--Soft-blue);
+}
+.pricing {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+}
+.pricing .left,
+.pricing .right {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  justify-content: center;
+}
+.pricing .left span {
+  color: var(--Cyan);
+  font-weight: 600;
+  margin-left: 3px;
+}
+.pricing .right span {
+  color: var(--Soft-blue);
+  margin-left: 3px;
+  font-weight: 300;
+}
+.pricing::after {
+  position: absolute;
+  content: "";
+  bottom: -15px;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background-color: var(--line-Very-dark-blue);
+}
+.creator {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  color: var(--Soft-blue);
+  font-size: 14px;
+}
+.creator img {
+  width: 20px;
+  margin-right: 10px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+.creator span {
+  color: var(--white);
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}

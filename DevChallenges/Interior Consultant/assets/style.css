@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200;300;400;500;600;700;800;900&family=Lora:wght@400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.homepage {
+  background-color: #181719;
+  color: white;
+}
+
+.homepage .nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 36px 77px;
+}
+
+.homepage .nav .left {
+  display: block;
+  border: 1px solid #ffffff;
+  padding: 8px;
+  font-family: "Crimson Pro", serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.homepage .nav .right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+.homepage .nav .menu {
+  display: none;
+}
+.homepage .nav .right li {
+  text-transform: capitalize;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 76px;
+  padding: 5px 5px;
+}
+.homepage .nav .right li a {
+  text-decoration: none;
+  color: #fff;
+}
+.homepage .nav .right li a.active {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  color: #fff;
+}
+.homepage .section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 177px 77px;
+}
+.homepage .section .left {
+  flex-basis: 40%;
+}
+.homepage .section .left h1 {
+  font-family: "Lora", serif;
+  font-size: 48px;
+  font-weight: 500;
+}
+.homepage .section .left p {
+  margin: 45px 0;
+  font-family: "Montserrat", sans-serif;
+  line-height: 29px;
+  font-size: 24px;
+  width: 70%;
+}
+.homepage .section .left a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  line-height: 22px;
+  font-size: 22px;
+  font-weight: 700;
+}
+.homepage .section .left a span {
+  margin: 0 14px;
+}
+.homepage .section .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 60%;
+}
+.homepage .section .right .image {
+  position: relative;
+}
+.homepage .section .right img {
+  width: 100%;
+}
+.homepage .section .right .creator {
+  position: absolute;
+  background: #181719;
+  bottom: -50px;
+  right: 32px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.homepage .section .right .creator .top {
+  display: flex;
+}
+.homepage .section .right .creator .top img {
+  width: 20px;
+  flex-basis: 15%;
+  border-radius: 50%;
+}
+.homepage .section .right .creator .top .details {
+  flex-basis: 85%;
+  margin-left: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+.homepage .section .right .creator .top .details .profession {
+  font-family: "Montserrat", sans-serif;
+  margin: 8px 0 0 0;
+  font-size: 12px;
+  font-weight: 500;
+}
+.homepage .section .right .creator .bottom {
+  margin-top: 15px;
+  width: 75%;
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 31px;
+}
+
+.homepage .contact {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #a9a9a9;
+  padding-bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .homepage .nav .menu {
+    display: block;
+    z-index: 1000;
+    position: fixed;
+    right: 12px;
+    top: 19px;
+  }
+  .homepage .nav .right {
+    display: none;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    right: -100vw;
+    background-color: #181719;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    z-index: 100;
+    transition: all 0.3s ease-in;
+  }
+  .homepage .nav .right li {
+    margin: 10px 0;
+    padding: 12px;
+  }
+  .homepage .nav .right.active {
+    display: flex;
+    opacity: 1;
+    right: 0;
+  }
+  .homepage .nav {
+    padding: 19px 12px;
+  }
+  .homepage .section {
+    flex-direction: column;
+    padding: 19px 12px;
+  }
+  .homepage .section .left h1 {
+    font-size: 34px;
+  }
+  .homepage .section .left p {
+    margin: 30px 0;
+    font-size: 20px;
+    width: 100%;
+  }
+  .homepage .section .left a {
+    font-size: 18px;
+  }
+  .homepage .section .left a span {
+    margin: 0 8px;
+  }
+
+  .homepage .section .right {
+    margin-top: 26px;
+    flex-basis: 0;
+  }
+  .homepage .section .right .creator {
+    bottom: -30px;
+    right: 10px;
+    padding: 5px;
+    width: 85%;
+  }
+  .homepage .section .right .creator .top img {
+    width: 15px;
+  }
+  .homepage .section .right .creator .top .details {
+    margin-left: 13px;
+  }
+  .homepage .section .right .creator .top .details .profession {
+    margin: 6px 0 0 0;
+    font-size: 11px;
+  }
+  .homepage .section .right .creator .bottom {
+    margin-top: 10px;
+    width: 100%;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 500;
+  }
+
+  .homepage .contact {
+    font-weight: 400;
+    font-size: 13px;
+    padding: 50px 0 30px 0;
+  }
+}

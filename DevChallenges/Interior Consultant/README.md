@@ -1,10 +1,10 @@
 # Interior Consultant
 
-This is the solution for the Challenge [nterior Consultant](https://devchallenges.io/challenges/Jymh2b2FyebRTUljkNcb)
+This is the solution for the Challenge [Interior Consultant](https://devchallenges.io/challenges/Jymh2b2FyebRTUljkNcb)
 
 ## Screenshots
 
-![App Screenshot]()
+![App Screenshot](https://raw.githubusercontent.com/pratyush1100/Challenges/main/DevChallenges/Interior%20Consultant/assets/ss.png)
 
 ## Challenge description
 

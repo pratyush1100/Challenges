@@ -1,10 +1,8 @@
-
-
 # Challenges
 
 In this repository, I'll post all the solutions of project challenges that i will attempt on Some sites
 
-###### Sites 
+###### Sites
 
 - [DevChallenges](https://devchallenges.io/)
 - [FrontendMentor](https://www.frontendmentor.io/)
@@ -21,10 +19,10 @@ I'll use [Vercel](https://vercel.com/) or [Netlify](https://www.netlify.com/) fo
 
 ## Stats
 
-| Site Name | No. of Projects finished |
-| ----------- | ----------- |
-| DevChallenges | 2 |
-| FrontendMentor | 3 |
+| Site Name      | No. of Projects finished |
+| -------------- | ------------------------ |
+| DevChallenges  | 4                        |
+| FrontendMentor | 3                        |
 
 ## Authors
 
